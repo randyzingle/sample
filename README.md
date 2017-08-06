@@ -245,7 +245,21 @@ anduril$ git commit -m 'first commit'
  create mode 100644 settings.gradle
  create mode 100644 src/main/java/Library.java
  create mode 100644 src/test/java/LibraryTest.java
- anduril$ git remote add origin https://github.com/randyzingle/tools.git
+anduril$ git remote add origin https://github.com/randyzingle/sample.git
+anduril$ git remote -v
+origin	https://github.com/randyzingle/sample.git (fetch)
+origin	https://github.com/randyzingle/sample.git (push)
+anduril$ git push origin master
+Username for 'https://github.com': randyzingle
+Password for 'https://randyzingle@github.com': 
+Counting objects: 15, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (15/15), 7.34 KiB | 0 bytes/s, done.
+Total 15 (delta 0), reused 0 (delta 0)
+To https://github.com/randyzingle/sample.git
+ * [new branch]      master -> master
+
  
 ```
 

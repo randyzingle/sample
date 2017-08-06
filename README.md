@@ -5,10 +5,10 @@
 Note, this README and all subsequent ones will be written using Markdown: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 ### Download and install the tools that you'll need (Linux or Mac box only!)
-1. [Eclipse Oxygen Release (4.7.0)] (http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/oxygenr)
-2. [Gradle] (https://gradle.org/install/)
+1. [Eclipse Oxygen Release (4.7.0)](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/oxygenr)
+2. [Gradle](https://gradle.org/install/)
 3. Use the Eclipse Marketplace (under Help) to install the Buildship gradle plugin
-4. [Git] (https://git-scm.com/downloads)
+4. [Git](https://git-scm.com/downloads)
 
 ### Create a new project from scratch
 First we will act as if we are creating a project from scratch so that we can see how its done.

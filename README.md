@@ -226,7 +226,7 @@ bin/
 ```
 
 Now make our folder **git-enabled**. The full instructions for this are here:
-[git initialization] (https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
+[git initialization](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
 
 ```shell
 anduril$ pwd
@@ -262,5 +262,22 @@ To https://github.com/randyzingle/sample.git
 
 Note if you added the remote as https://github.com/randyzingle/sample.git vs git@github.com:randyzingle/sample.git you will **continually** get asked for your username and password every time to try to push code to the remote repository. That's no fun so make sure you use **ssh** vs **https**. This only works if you added your ssh key to the repo, if you haven't yet follow the instructions here: [add our ssh key to the repo] (https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/).
 
+Now pushing and pulling from the remote should be easy:
+
+```shell
+anduril$ git add .
+anduril$ git commit -m 'first commit'
+[master 40b4d43] first commit
+ 1 file changed, 6 insertions(+), 9 deletions(-)
+anduril$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 634 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:randyzingle/sample.git
+   34f5d18..40b4d43  master -> master
+```
 
 

@@ -2,7 +2,7 @@
 
 ## phase1a - Initial setup 
 
-Note, this README and all subsequent ones will be written using Markdown: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+Note, this README and all subsequent ones will be written using [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ### Download and install the tools that you'll need (Linux or Mac box only!)
 1. [Eclipse Oxygen Release (4.7.0)](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/oxygenr)

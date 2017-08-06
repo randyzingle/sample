@@ -217,7 +217,6 @@ node_modules/
 RemoteSystemsTempFiles/
 .gradle/
 build/
-gradle/
 libs/
 .recommenders
 bin/
@@ -279,5 +278,54 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To github.com:randyzingle/sample.git
    34f5d18..40b4d43  master -> master
 ```
+
+### Share or Use the new project from git
+
+Create a new empty directory and clone the project into it:
+
+```shell
+anduril$ mkdir temp
+anduril$ cd temp
+anduril$ pwd
+/home/rzingle/work/projects/temp
+anduril$ git clone git@github.com:randyzingle/sample.git
+anduril$ ls
+sample
+anduril$ cd sample
+anduril$ ls
+build.gradle  gradle  gradlew  gradlew.bat  README.md  settings.gradle  src
+anduril$ ls -al
+total 56
+drwxrwxr-x 5 rzingle rzingle 4096 Aug  6 17:16 .
+drwxrwxr-x 3 rzingle rzingle 4096 Aug  6 17:16 ..
+-rw-rw-r-- 1 rzingle rzingle  750 Aug  6 17:16 build.gradle
+drwxrwxr-x 8 rzingle rzingle 4096 Aug  6 17:16 .git
+-rw-rw-r-- 1 rzingle rzingle  142 Aug  6 17:16 .gitignore
+drwxrwxr-x 3 rzingle rzingle 4096 Aug  6 17:16 gradle
+-rwxrwxr-x 1 rzingle rzingle 5299 Aug  6 17:16 gradlew
+-rw-rw-r-- 1 rzingle rzingle 2260 Aug  6 17:16 gradlew.bat
+-rw-rw-r-- 1 rzingle rzingle 9441 Aug  6 17:16 README.md
+-rw-rw-r-- 1 rzingle rzingle  582 Aug  6 17:16 settings.gradle
+drwxrwxr-x 4 rzingle rzingle 4096 Aug  6 17:16 src
+```
+
+Note the Eclipse `.classpath` and `.project` files aren't there yet. Let's build them then import the project into Eclipse:
+
+```shell
+anduril$ gradlew eclipse
+:eclipseClasspath
+:eclipseJdt
+:eclipseProject
+:eclipse
+
+BUILD SUCCESSFUL
+
+Total time: 0.5 secs
+``` 
+
+And once again you have a project that you can import into eclipse.
+
+
+
 
 

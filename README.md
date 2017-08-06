@@ -245,13 +245,12 @@ anduril$ git commit -m 'first commit'
  create mode 100644 settings.gradle
  create mode 100644 src/main/java/Library.java
  create mode 100644 src/test/java/LibraryTest.java
-anduril$ git remote add origin https://github.com/randyzingle/sample.git
+anduril$ git remote add origin git@github.com:randyzingle/sample.git
 anduril$ git remote -v
-origin	https://github.com/randyzingle/sample.git (fetch)
-origin	https://github.com/randyzingle/sample.git (push)
-anduril$ git push origin master
-Username for 'https://github.com': randyzingle
-Password for 'https://randyzingle@github.com': 
+origin	git@github.com:randyzingle/sample.git (fetch)
+origin	git@github.com:randyzingle/sample.git (push)
+anduril$ git branch --set-upstream-to=origin/master master
+anduril$ git push origin master 
 Counting objects: 15, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (11/11), done.
@@ -259,11 +258,9 @@ Writing objects: 100% (15/15), 7.34 KiB | 0 bytes/s, done.
 Total 15 (delta 0), reused 0 (delta 0)
 To https://github.com/randyzingle/sample.git
  * [new branch]      master -> master
-
- 
 ```
 
-
+Note if you added the remote as https://github.com/randyzingle/sample.git vs git@github.com:randyzingle/sample.git you will **continually** get asked for your username and password every time to try to push code to the remote repository. That's no fun so make sure you use **ssh** vs **https**. This only works if you added your ssh key to the repo, if you haven't yet follow the instructions here: [add our ssh key to the repo] (https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/).
 
 
 

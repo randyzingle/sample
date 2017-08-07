@@ -328,7 +328,15 @@ Total time: 0.5 secs
 
 And once again you have a project that you can import into eclipse.
 
+### Clone eachother's repo 
 
+Now write a couple of classes, one of which you can run that prints out something interesting. 
+
+Write a simple README.md file, placed in your top level folder that explains how to run the project. 
+
+Make sure they build by running `gradlew build`, then push everything to your remote repo. 
+
+Then create a new top level directory, clone eachother's repo, import as an Eclipse project, and run eachother's project.  
 
 
 

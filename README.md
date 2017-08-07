@@ -227,6 +227,9 @@ bin/
 Now make our folder **git-enabled**. The full instructions for this are here:
 [git initialization](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
 
+First set up a new repository in github and then use the repo name below replacing **<REPLACE WITH YOUR GIT REPO>** with the
+repo name. For instance, for the below I replace it with **randyzingle/sample.git**
+
 ```shell
 anduril$ pwd
 /home/rzingle/work/projects/courses/adventure
@@ -244,7 +247,7 @@ anduril$ git commit -m 'first commit'
  create mode 100644 settings.gradle
  create mode 100644 src/main/java/Library.java
  create mode 100644 src/test/java/LibraryTest.java
-anduril$ git remote add origin git@github.com:randyzingle/sample.git
+anduril$ git remote add origin git@github.com:<REPLACE WITH YOUR GIT REPO>
 anduril$ git remote -v
 origin	git@github.com:randyzingle/sample.git (fetch)
 origin	git@github.com:randyzingle/sample.git (push)

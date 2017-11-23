@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello World</title>
+  <!-- Reference Angular Material stylesheet -->  
+  <link rel="stylesheet" href="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.0.8/angular-material.css">
+  <!-- Reference needed scripts. See scripts section above for details on each script-->    
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>    
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>    
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>    
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>   
+  	<script src="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.0.8/angular-material.js"></script>      
+
+</head>
+<body ng-app="sampleApp" layout="column">
+	    
+	<!-- Bootstrap Angular Material Application. We create a module with ngMaterial as a dependency.
+  Learn more about an AngularJS module in a later section of the chapter -->
+	    
+	<script>
+		        angular.module("sampleApp", [ "ngMaterial" ]);    
+	</script>
+	    
+	<!-- Create a title: Here we are creating a simple toolbar.
+  We will get into details of various controls in Angular Material during course of this book.
+  For the moment, understand that it is an Angular Material element for creating a title and a toolbar-->
+
+  <md-toolbar md-scroll-shrink="true" layout-padding class="md-tall md-toolbar-tools-bottom">
+      <span flex></span>
+      <div class="md-toolbar-tools">
+          <md-button class="md-icon-button">
+              <span>bt</span>
+          </md-button>
+          <h2>Page Title</h2>
+          <span flex></span>
+          <md-button>An Action</md-button>
+      </div>
+  </md-toolbar>
+  <md-sidenav md-is-open="true"  class="md-sidenav-left">
+   <md-toolbar layout-padding class="md-medium-tall">
+        <h2 class="md-toolbar-tools">All Actions</h2>
+   </md-toolbar>
+</md-sidenav>
+
+  <div layout="column">
+        <h2>Welcome to Angular Material Sample</h2>
+        <div layout="row">
+                <strong flex="15">Enter Baldur's name</strong>
+                <input flex="30" type="text" placeholder="baldur"/>
+        </div>
+</div>
+	        
+</body>
+</html>                                                                               
